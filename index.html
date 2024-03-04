@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe um número de 1 a 50</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <form id="numeroForm">
+                <span>Informe um número de 1 a 50:</span>
+                <input type="number" id="numero" name="numero" min="1" max="50" required>
+                <input type="submit" value="Enviar">
+                <img id="loading" src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1268.gif" alt="gif" width="50%">
+            </form>
+
+            <div id="resultado" class="hidden">
+                <span>O número que você escolheu foi:</span><br>
+                <span id="numero-escolhido"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
